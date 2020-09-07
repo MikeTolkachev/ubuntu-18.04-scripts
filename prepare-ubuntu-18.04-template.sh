@@ -21,6 +21,7 @@ apt upgrade -y
 
 #install packages
 apt install -y open-vm-tools
+dpkg --configure -a
 
 #Stop services for cleanup
 service rsyslog stop
