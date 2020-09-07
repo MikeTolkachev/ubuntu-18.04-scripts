@@ -72,6 +72,7 @@ chmod +x /etc/rc.local
 sed -i 's/preserve_hostname: false/preserve_hostname: true/g' /etc/cloud/cloud.cfg
 truncate -s0 /etc/hostname
 hostnamectl set-hostname localhost
+truncate -s 0 /etc/machine-id
 
 #cleanup apt
 apt clean
